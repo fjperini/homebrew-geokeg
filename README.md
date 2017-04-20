@@ -1,2 +1,12 @@
 # geokeg
-Keg for GIS recipes for homebrew.
+A keg for [homebrew](https://brew.sh)-installable GIS recipes.
+
+## Tap Keg
+
+    brew tap walker/geokeg
+
+## Formula
+
+### [geogig](http://geogig.org)
+
+    brew install walker/geokeg/geogig
