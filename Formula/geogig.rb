@@ -6,7 +6,6 @@ class Geogig < Formula
 
   def install
     bin.install "bin/geogig"
-    bin.install "bin/geogig-gateway"
     prefix.install "lib"
   end
 
