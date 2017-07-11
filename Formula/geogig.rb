@@ -4,10 +4,11 @@ class Geogig < Formula
   url "http://download.locationtech.org/geogig/geogig-1.1.1.zip"
   sha256 "52d277bd9a18f071aff21fd4f58b1879fb2fad4dd3ddb589fc14050b9dd355bf"
 
-  option "with-java",              "Use Java, requires Java 8 from https://www.java.com/en/download/mac_download.jsp"
-  depends_on :java                 => ["1.8+"]
+  depends_on :java                 => ["1.8+", :recommended]
 
   def install
+    args << "--without-java"             if build.without? "java"
+
     bin.install "bin/geogig"
     prefix.install "lib"
   end
