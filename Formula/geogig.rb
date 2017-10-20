@@ -10,7 +10,8 @@ class Geogig < Formula
     args << "--without-java" if build.without? "java"
 
     bin.install "bin/geogig"
-    prefix.install "lib"
+    prefix.install "libexec"
+    prefix.install "misc"
   end
 
   test do
