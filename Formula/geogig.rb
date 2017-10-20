@@ -2,7 +2,7 @@ class Geogig < Formula
   desc "Enable distributed versioning of geospatial data in a git-like context"
   homepage "http://geogig.org"
   url "http://download.locationtech.org/geogig/geogig-1.2.0.zip"
-  sha256 "52d277bd9a18f071aff21fd4f58b1879fb2fad4dd3ddb589fc14050b9dd355bf"
+  sha256 "c438d97d8978a9d4985bd4f2ba3fff481b7956bfc4bd986ee3c79c6c07cd4f34"
 
   depends_on :java => ["1.8+", :recommended]
 
